@@ -1,4 +1,54 @@
 *, body {
 	padding: 0;
     margin: 0;
+    font-family: Roboto, sans-serif;
+    background-color: #e3edef;
+}
+
+
+.underline {
+  transition: width 0.5s ease-out;
+  height: 5px;
+  width: 0px;
+  position: relative;
+  left:3px;
+  background-color: white;
+}
+.item a:hover {
+  /*background-color: #A8DADC;*/
+  background-color: transparent;
+  color: white;
+}
+li:hover .underline {
+  width: 100%;
+}
+
+.logo a{
+  text-decoration: none;
+  color: #3d3f3a;
+  font-weight: 600;
+
+}
+.logo:hover a{
+  background-color: transparent;
+}
+
+.logo {
+  margin: 10px;
+}
+
+
+@media only screen and (max-width: 700px) {
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+.logo {
+    display: none;
+}
 }

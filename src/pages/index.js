@@ -2,6 +2,7 @@ import * as React from "react"
 import Works from '../components/Works';
 import Navigation from '../components/Navigation';
 import Welcome from '../components/Welcome';
+import About from '../components/About';
 
 import '../styles/styles.css';
 // styles
@@ -34,6 +35,7 @@ const IndexPage = () => {
       <Navigation />
       <Welcome />
       <Works />
+      <About />
 
     </main>
   )

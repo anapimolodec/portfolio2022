@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    siteUrl: `https://www.yourdomain.tld`,
+    siteUrl: `http://localhost:8000/`,
   },
   plugins: [
     `gatsby-plugin-image`,
@@ -26,9 +26,10 @@ module.exports = {
     {
       resolve: "gatsby-source-filesystem",
       options: {
-        name: `blog`,
-        path: `${__dirname}/blog`,
-      }
+        name: `images`,
+        path: `${__dirname}/src/images/`,
+      },
     },
+    
   ],
 }

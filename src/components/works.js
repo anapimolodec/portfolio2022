@@ -2,7 +2,7 @@ import * as React from "react"
 import '../styles/typography.css';
 import OneWork from './Onework';
 // import Blog from './Blog';
-const wtitle = {
+const title = {
   fontFamily: 'BonVivantSerif, serif',
   fontSize: '96px',
   marginBottom: '100px',
@@ -127,16 +127,17 @@ const links = [
   },
 
 ]
-const workStyles = {
+const sectionStyles = {
   width: '80%',
   marginLeft: '10%',
+  marginTop: '200px',
 }
 
 const Works = () => {
   
   return (
-    <section style = {workStyles} id ="works"> 
-      <h2 style= {wtitle} > Works </h2>
+    <section style = {sectionStyles} id ="works"> 
+      <h2 style= {title} > Works </h2>
       <ol>
           {links.map((link, index) => (
             <OneWork link = {link} index = {index}/>

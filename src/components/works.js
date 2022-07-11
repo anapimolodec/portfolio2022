@@ -1,15 +1,12 @@
 import * as React from "react"
 import '../styles/typography.css';
-import { StaticImage } from "gatsby-plugin-image"
+import OneWork from './Onework';
 // import Blog from './Blog';
 const wtitle = {
   fontFamily: 'BonVivantSerif, serif',
   fontSize: '96px',
   marginBottom: '100px',
 }
-
-
-
 
 const links = [
   {
@@ -19,7 +16,7 @@ const links = [
     description:
       "Beauty products company specilliasing in vegan and organic products",
     tags: ["Client Work", "Front End"],
-    image: '"../images/PHOTO.png"',
+    image: 'https://images.unsplash.com/photo-1657459945845-6d287c0e28d4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80',
     technologies: ["Shopify (platform)", "Liquid", "JS(ES6), HTML5, CSS3", "AWS instance", "WHOIS domain"],
     contribution: "Using client’s Figma Design files, worked on the design and functionality of specific pages and components. Integrated Shopify store with third party delivery and shopping apps. Worked on data transfer as a part of full data migration between different platforms. Created and managed AWS ec2 instance as a server for the application code. Installed SSL and deployed application code to the running server. ",
     italictext: "Navigation Bar, Registration & Login, Cart, Product Pages, Products Grid, Footer, Checkout Page.",
@@ -135,94 +132,15 @@ const workStyles = {
   marginLeft: '10%',
 }
 
-const oneWork = {
-  width: '100%',
-  display: 'flex',
-}
-
-const indexStyle = {
-  fontSize: '96px',
-  fontFamily: 'BonVivantSerif, serif',
-  width: '30%',
-  borderRight: 'solid #e7b9aa 1px',
-}
-
-const lineStyle = {
-  display: 'flex',
-  width: '100%',
-  paddingBottom: '10px',
-}
-
-const tagStyle = {
-  background: '#E7B9AA',
-  borderRadius: '14px',
-  padding: '6px 16px',
-  marginRight: '15px',
-  fontSize: '0.8rem',
-}
-
-const desc1 = {
-  paddingTop: '35px',
-  borderBottom: 'solid #e7b9aa 1px',
-  
-}
-
-const desc2 = {
-  paddingTop: '35px',
-  
-}
 const Works = () => {
   
   return (
-    <section style = {workStyles}> 
-    <h2 style= {wtitle} > Works </h2>
-    <ol>
+    <section style = {workStyles} id ="works"> 
+      <h2 style= {wtitle} > Works </h2>
+      <ol>
           {links.map((link, index) => (
-
-            <li key={link.url} style={oneWork}>
-              <div style ={indexStyle}> 0{index+1} </div>
-              <div style = {{marginLeft: '50px', display: 'flex', flexDirection: 'row', justifyContent: 'flex-start'}}> 
-                  <div style={{width: '40%', marginRight: '50px'}}>
-                  <img
-                    src={link.image}
-                    alt={link.image} 
-                    placeholder="blurred"
-                    
-                    width= "450px" />
-                  </div>
-                  <div style={{width: '60%'}}>
-                    <h2 style={{fontFamily: 'BonVivantSerif, serif', fontSize: '2rem', marginTop: '20px'}}> {link.title} </h2>
-                    <div style={desc1} > 
-
-                      <div style={lineStyle}> <div style= {{width: '30%', fontWeight: 500, color: '#787878'}}> Role </div> <div style= {{width: '70%'}}> {link.role} </div> </div>
-                      {
-                        link.url ? (
-                          <div style={lineStyle}> <div style= {{width: '30%', fontWeight: 500, color: '#787878'}}> URL </div> <div style= {{width: '70%'}}> <a href={link.url}> {link.url}</a></div> </div>
-                        ) : ("")
-                      }
-                      <div style={lineStyle}> <div style= {{width: '30%', fontWeight: 500, color: '#787878'}}> Description </div> 
-                        <div style= {{width: '70%'}}>  {link.description} 
-                        <div style={{marginTop: "20px", paddingBottom: "50px"}}> {link.tags.map(tag => 
-                          <span key ={tag} style={tagStyle}> {tag} </span>
-                          )} </div>
-                        </div> 
-                      </div>
-                      
-                    </div>
-                    <div style={desc2}>
-                      <div style= {{fontWeight: 500, color: '#787878', paddingBottom: '10px'}}> Technologies </div> 
-                      <div style= {{}}> {link.technologies.map(tech => (
-                          <p key={tech}> {tech} </p>
-                        ))} </div> <br />
-                      <div style= {{fontWeight: 500, color: '#787878', paddingBottom: '10px'}}> My Contribution </div> 
-                      <div style= {{}}> {link.contribution} </div> <br />
-                      <div style= {{fontStyle: 'italic', fontWeight: 400}}> {link.italictext} </div>
-                    </div>
-                  </div>
-
-
-              </div>
-            </li>
+            <OneWork link = {link} index = {index}/>
+            
           ))}
         </ol>
 

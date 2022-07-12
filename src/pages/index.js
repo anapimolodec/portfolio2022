@@ -4,6 +4,7 @@ import Navigation from '../components/Navigation';
 import Welcome from '../components/Welcome';
 import About from '../components/About';
 import Testimonials from '../components/Testimonials';
+import Contact from '../components/Contact';
 import '../styles/styles.css';
 // styles
 const underline = {
@@ -37,7 +38,8 @@ const IndexPage = () => {
       <Works />
       <About />
       <Testimonials />
-
+      <Contact />
+      <div style={{height: '200px'}}></div>
     </main>
   )
 }

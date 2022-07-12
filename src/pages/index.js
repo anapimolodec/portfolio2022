@@ -3,7 +3,7 @@ import Works from '../components/Works';
 import Navigation from '../components/Navigation';
 import Welcome from '../components/Welcome';
 import About from '../components/About';
-
+import Testimonials from '../components/Testimonials';
 import '../styles/styles.css';
 // styles
 const underline = {
@@ -36,6 +36,7 @@ const IndexPage = () => {
       <Welcome />
       <Works />
       <About />
+      <Testimonials />
 
     </main>
   )

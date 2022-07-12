@@ -7,6 +7,11 @@ const title = {
   fontSize: '96px',
   marginBottom: '100px',
 }
+const sectionStyles = {
+  width: '80%',
+  marginLeft: '10%',
+  marginTop: '200px',
+}
 
 const links = [
   {
@@ -127,11 +132,7 @@ const links = [
   },
 
 ]
-const sectionStyles = {
-  width: '80%',
-  marginLeft: '10%',
-  marginTop: '200px',
-}
+
 
 const Works = () => {
   

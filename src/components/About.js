@@ -7,11 +7,42 @@ const title = {
   fontSize: '96px',
   marginBottom: '100px',
 }
+const imgStyle = {
+	margin: '20px',
+	backgroundColor: 'transparent',
+}
 
+const imgWrapStyle = {
+	margin: '15px',
+	padding: '10px',
+    backgroundColor: '#C1DCED',
+    borderRadius: '50%',
+}
 const sectionStyles = {
 	width: '80%',
   	marginLeft: '10%',
   	marginTop: '200px',
+}
+
+const skillWrap = {
+	display: 'flex',
+	flexWrap: 'wrap',
+}
+
+const postWrap = {
+	display: 'flex',
+	flexDirection: 'column',
+	width: '40%',
+	marginRight: '20px',
+	marginBottom: '20px',
+
+}
+const tagStyle = {
+  background: '#D9D9D9',
+  borderRadius: '14px',
+  padding: '6px 16px',
+  marginRight: '15px',
+  fontSize: '0.8rem',
 }
 const aboutText = [
 	"My name is Aiaru, and I am a Front End Developer. Thank you for vising my digital portfolio.",
@@ -20,6 +51,36 @@ const aboutText = [
 	"I am a good team player, a perfect fit for an aspiring tech company. Open to both freelance and full-time work positions.",
 	"Currently I am based in Seoul, South Korea. I am open to any collaborations and projects. "
 	]
+
+const posts = [
+	{
+		title: 'Store Transfer from Cafe24 to Shopify: Part 2',
+		date: '15 Apr 2022',
+		tag: 'Shopify',
+	},
+	{
+		title: 'Store Transfer from Cafe24 to Shopify: Part 1 (Data Transfer)',
+		date: '31 Mar 2022',
+		tag: 'Shopify',
+	},
+	{
+		title: 'Automate the collection of Naver News articles with keywords in Google Sheets using Python',
+		date: '25 June 2021',
+		tag: 'Shopify',
+	},
+	{
+		title: 'Using PokeAPI to build simple Pokemon Generator',
+		date: '27 Dec 2020',
+		tag: 'REST API',
+	},
+]
+
+const subTitleStyle = {
+	fontFamily: 'BonVivantSerif, serif', 
+	fontSize: '2rem', 
+	marginTop: '30px', 
+	marginBottom: '10px'
+}
 const About = () => {
 	const allImagesQuery = graphql`
     query MyQuery {
@@ -52,6 +113,9 @@ const About = () => {
     let tech = []
     let cms = []
     let design = []
+    let lang =[]
+    let plat = []
+    let frame = []
     images.map(image => {
           let dir = image.node.relativeDirectory;
           console.log(URL+image.node.publicURL)
@@ -63,7 +127,13 @@ const About = () => {
               cms.push(image)
           } else if (dir === "design") {
               design.push(image)
-          } 
+          } else if (dir === "framework") {
+          	frame.push(image)
+          } else if (dir === "lang") {
+          	lang.push(image)
+          } else if (dir === "platform") {
+          	plat.push(image)
+          }
           return;
         });
     	console.log(tech, cms, design)
@@ -76,13 +146,74 @@ const About = () => {
           ))}
 	      </div>
 	      <div>
-	      	<h3 style={{fontFamily: 'BonVivantSerif, serif', fontSize: '2rem', marginTop: '20px', }}> Technologies </h3>
-	      	{tech.map(image => (
-	      		<img key = {image.name} src={URL+image.node.publicURL} alt="logo" width="100px" height="100px"/>
-				  
+	      	<h3 style={subTitleStyle}> Frameworks </h3>
+	      	<div style = {skillWrap}>
+	      	{frame.map(image => (
+	      		<div style={imgWrapStyle}>
+	      			<img style = {imgStyle} key = {image.name} src={URL+image.node.publicURL} alt="logo" width="80px" height="80px"/>
+				</div>
               )
             )}
+            </div>
 	      </div>
+	      <div>
+	      	<h3 style={subTitleStyle}> Technologies </h3>
+	      	<div style = {skillWrap}>
+	      	{tech.map(image => (
+	      		<div style={imgWrapStyle}>
+	      			<img style = {imgStyle} key = {image.name} src={URL+image.node.publicURL} alt="logo" width="80px" height="80px"/>
+				</div>
+              )
+            )}
+            </div>
+	      </div>
+	      <div>
+	      	<h3 style={subTitleStyle}> Languages and not </h3>
+	      	<div style = {skillWrap}>
+	      	{lang.map(image => (
+	      		<div style={imgWrapStyle}>
+	      			<img style = {imgStyle} key = {image.name} src={URL+image.node.publicURL} alt="logo" width="80px" height="80px"/>
+				</div>
+              )
+            )}
+            </div>
+	      </div>
+	      <div>
+	      	<h3 style={subTitleStyle}> Design </h3>
+	      	<div style = {skillWrap}>
+	      	{design.map(image => (
+	      		<div style={imgWrapStyle}>
+	      			<img style = {imgStyle} key = {image.name} src={URL+image.node.publicURL} alt="logo" width="80px" height="80px"/>
+				</div>
+              )
+            )}
+            </div>
+	      </div>
+	      <div>
+	      	<h3 style={subTitleStyle}> CMS </h3>
+	      	<div style = {skillWrap}>
+	      	{cms.map(image => (
+	      		<div style={imgWrapStyle}>
+	      			<img style = {imgStyle} key = {image.name} src={URL+image.node.publicURL} alt="logo" width="80px" height="80px"/>
+				</div>
+              )
+            )}
+            </div>
+	      </div>
+	      <div>
+	      	<h3 style={subTitleStyle}> Posts </h3>
+	      	<div style = {skillWrap}>
+	      	{posts.map(post => (
+	      		<div style={postWrap}>
+	      			<h4 style={{fontSize: '1.5rem', marginTop: '20px', marginBottom: '10px'}}> {post.title} </h4>
+	      			<p><span style={tagStyle}> {post.tag} </span><span style={{fontSize: '0.8rem'}}>  {post.date}</span> </p>
+	      			
+				</div>
+              )
+            )}
+            </div>
+	      </div>
+
     	</section>
 		)
 

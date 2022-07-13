@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, {useState, useEffect} from "react";
 import '../styles/styles.css';
 import Socials from './Socials';
 import Circle from "../images/circle.svg";
@@ -6,11 +6,10 @@ const welcomeStyles = {
 	paddingTop: '10vh',
 	width: '100%',
 	height: '90vh',
-	display: 'flex',
-	flexDirection: 'row',
 	justifyContent: 'center',
 	alignItems: 'center',
 }
+
 const header = {
   fontFamily: 'BonVivantSerif, serif',
   fontSize: '96px',
@@ -26,12 +25,13 @@ const circleStyles = {
 	backgroundColor: 'transparent',
 }
 const Welcome = () => {
+
   return (
-  <section style={welcomeStyles}>
-  	<div style={{width: '50%'}}> 
+  <section style={welcomeStyles} className="mobileColumn">
+  	<div className="mobileFull"> 
   		<Circle style={circleStyles} className="rotating"/>
   	</div>
-  	<div style={{width: '50%'}}> 
+  	<div className="mobileFull"> 
     <h1 style={header}> Hey, </h1>
 	    <p style={pStyles}> welcome to my personal portfolio
 	    <br /> <br /> <br />
@@ -39,7 +39,7 @@ const Welcome = () => {
 	    <br />
 	    I can create a neat and modern website for you.
 	    </p>
-	    <button className = "button"> contact me </button>
+	    <button className = "button"><a href="#contactme" style={{textDecoration: 'none', color:'black', fontWeight: 100}}> contact me </a></button>
 	    <Socials />
     </div>
 	</section>

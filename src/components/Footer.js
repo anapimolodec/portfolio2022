@@ -17,7 +17,7 @@ const Footer = () => {
   return (
   	<div style={footerMain}>
   		
-  		<h3 style={{marginRight: '50px', paddingLeft:'100px', marginTop: '30px'}}> Personal Portfolio of Aiaru Mukhamedyarova. <br />All right reserved. 2022.</h3>
+  		<p style={{marginRight: '50px', paddingLeft:'100px', marginTop: '30px'}}> Personal Portfolio of Aiaru Mukhamedyarova. <br />All right reserved. 2022.</p>
   		
   		<div style={{paddingRight: '100px'}}> <Socials  /></div>
   	</div>

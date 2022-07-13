@@ -56,21 +56,25 @@ const posts = [
 	{
 		title: 'Store Transfer from Cafe24 to Shopify: Part 2',
 		date: '15 Apr 2022',
+		url: 'https://punchkorea.com/cafe24-to-shopify-address-consent-pg/',
 		tag: 'Shopify',
 	},
 	{
 		title: 'Store Transfer from Cafe24 to Shopify: Part 1 (Data Transfer)',
 		date: '31 Mar 2022',
+		url: 'https://punchkorea.com/cafe24-to-shopify-data-transfer/',
 		tag: 'Shopify',
 	},
 	{
 		title: 'Automate the collection of Naver News articles with keywords in Google Sheets using Python',
 		date: '25 June 2021',
+		url: 'https://punchkorea.com/automate-naver-news-keywords-sheets/',
 		tag: 'Shopify',
 	},
 	{
 		title: 'Using PokeAPI to build simple Pokemon Generator',
 		date: '27 Dec 2020',
+		url: 'https://medium.com/@anapimolodec/using-pokeapi-to-build-simple-pokemon-generator-e63c92bfa0d5',
 		tag: 'REST API',
 	},
 ]
@@ -118,7 +122,7 @@ const About = () => {
     let frame = []
     images.map(image => {
           let dir = image.node.relativeDirectory;
-          console.log(URL+image.node.publicURL)
+          
           if (dir === "technologies") {
               tech.push(image)
                 
@@ -136,7 +140,7 @@ const About = () => {
           }
           return;
         });
-    	console.log(tech, cms, design)
+    	
 	return (
 		<section style = {sectionStyles} id ="about"> 
 	      <h2 style= {title} > About </h2>
@@ -205,7 +209,7 @@ const About = () => {
 	      	<div style = {skillWrap}>
 	      	{posts.map(post => (
 	      		<div style={postWrap}>
-	      			<h4 style={{fontSize: '1.2rem', marginTop: '20px', marginBottom: '10px'}}> {post.title} </h4>
+	      			<h4 style={{fontSize: '1.2rem', marginTop: '20px', marginBottom: '10px'}}><a href={post.url} style={{textDecoration: 'none', color: 'black'}}> {post.title} </a> </h4>
 	      			<p><span style={tagStyle}> {post.tag} </span><span style={{fontSize: '0.8rem'}}>  {post.date}</span> </p>
 	      			
 				</div>

@@ -14,9 +14,8 @@ const oneWork = {
 }
 
 const indexStyle = {
-  
   paddingRight: '50px',
-  borderRight: 'solid #e7b9aa 1px',
+  
   minWidth: '150px',
   
 
@@ -95,11 +94,11 @@ const OneWork = ({link, index}) => {
 		color: '#7C9ABE',
 	}
 	return(
-		<div key={link.url} style={oneWork}>
-              <div style ={indexStyle}> <p style = {indexPstyle}> 0{index+1} </p></div>
+		<div key={link.url} style={oneWork} className="oneWork">
+              <div style ={indexStyle} className="index"> <p style = {indexPstyle}> 0{index+1} </p></div>
               {visible ? 
-              <div style = {{marginLeft: '50px', display: 'flex', flexDirection: 'row', justifyContent: 'flex-start', paddingBottom: '100px'}}> 
-                  <div style={{width: '40%', marginRight: '50px'}}>
+              <div  className="oneWorkGrid"> 
+                  <div  className="imgWrap">
                     <img
                       src={link.image}
                       alt={link.image} 
@@ -107,7 +106,7 @@ const OneWork = ({link, index}) => {
                       width= "100%" 
                       style={imgStyle}/>
                   </div>
-                  <div style={{width: '60%'}}>
+                  <div className="infoWrap">
                     <h2 style={{fontFamily: 'BonVivantSerif, serif', fontSize: '2rem', marginTop: '20px'}}> {link.title} </h2>
                     <div style={desc1} > 
 
@@ -140,7 +139,7 @@ const OneWork = ({link, index}) => {
 
 
               </div>
-              : <div style = {{marginLeft: '50px', marginBottom: '50px'}}> 
+              : <div className="oneWorkGridClosed"> 
               
               <div style={{marginTop: "10px", marginBottom: '10px'}}> {link.tags.map(tag => 
                           <span key ={tag} style={tagStyle}> {tag} </span>
@@ -148,7 +147,7 @@ const OneWork = ({link, index}) => {
               <h2 style={{fontFamily: 'BonVivantSerif, serif', fontSize: '2rem'}}> {link.title} </h2>
               <p> {link.description} </p>
                         
-              <button style={buttonStyle} classname="button" onClick = {(e)=>seeMore(e)}> see more </button> 
+              <button style={buttonStyle} className="button" onClick = {(e)=>seeMore(e)}> see more </button> 
               </div> }
               
             </div>

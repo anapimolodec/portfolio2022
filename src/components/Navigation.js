@@ -5,7 +5,7 @@ const navStyle = {
 	width: '100%',
 	display: 'flex',
 	justifyContent: 'center',
-	zIndex: 10,
+	zIndex: 100,
 }
 
 // const menuStyle = {

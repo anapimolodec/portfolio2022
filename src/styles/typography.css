@@ -4,6 +4,10 @@
     src: url(../fonts/BonVivantSerif.woff);
 }
 @font-face {
+    font-family: 'BonVivant';
+    src: url(../fonts/BonVivant-Regular.woff);
+}
+@font-face {
     font-family: 'HelveticaNeue';
     src: url(../fonts/Helvetica Neue Medium Extended.woff);
 }

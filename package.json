@@ -15,6 +15,7 @@
     "clean": "gatsby clean"
   },
   "dependencies": {
+    "@emailjs/browser": "^3.6.2",
     "@n8tb1t/use-scroll-position": "^2.0.3",
     "gatsby": "^4.17.2",
     "gatsby-plugin-google-fonts": "^1.0.1",

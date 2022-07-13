@@ -148,7 +148,7 @@ const OneWork = ({link, index}) => {
               <h2 style={{fontFamily: 'BonVivantSerif, serif', fontSize: '2rem'}}> {link.title} </h2>
               <p> {link.description} </p>
                         
-              <button style={buttonStyle} onClick = {(e)=>seeMore(e)}> see more </button> 
+              <button style={buttonStyle} classname="button" onClick = {(e)=>seeMore(e)}> see more </button> 
               </div> }
               
             </div>

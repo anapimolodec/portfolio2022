@@ -1,7 +1,9 @@
 import * as React from "react"
 import '../styles/typography.css';
 import Socials from './Socials';
+import Letter from './Letter';
 import {useStaticQuery, graphql} from 'gatsby'
+import '../styles/styles.css';
 // import Blog from './Blog';
 const title = {
   fontFamily: 'BonVivantSerif, serif',
@@ -32,6 +34,7 @@ const Contact = () => {
         <a href="https://drive.google.com/uc?export=download&id=1IZ76WgKhaPGUcVvdrBE3doudN_neUGhy" download style={{color:'black',textDecoration: 'none', borderBottom: '5px #7C9ABE solid'}}> download </a>my resume </p>
 
       </div>
+      <Letter />
      
 
     </section>

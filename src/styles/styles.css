@@ -220,6 +220,9 @@ textarea:focus {
   .numberGrid {
    justify-content: center !important;
   }
+  .numberGrid > div {
+    margin-right: 0 !important;
+  }
 }
 @media only screen and (max-width: 768px) {
   h1 {

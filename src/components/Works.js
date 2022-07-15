@@ -6,7 +6,7 @@ const title = {
   fontFamily: 'BonVivantSerif, serif',
   fontSize: '96px',
   marginBottom: '100px',
-  marginTop: '200px',
+  paddingTop: '200px',
 }
 const sectionStyles = {
   width: '80%',

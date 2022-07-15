@@ -65,7 +65,7 @@ export default function TrustSlider() {
         </div>
       </div>
       <div>
-        <div style={word}> 
+        <div style={word} className="nomargin"> 
           <div style= {textWrap}>
             <p style={{backgroundColor: 'transparent', fontStyle: 'italic', fontSize: '1.2rem'}}> {quotes[1].text} </p>
             <p style={{backgroundColor: 'transparent', marginTop: '15px'}}> 
@@ -75,7 +75,7 @@ export default function TrustSlider() {
         </div>
       </div>
       <div>
-        <div style={word}> 
+        <div style={word} className="nomargin"> 
           <div style= {textWrap}>
             <p style={{backgroundColor: 'transparent', fontStyle: 'italic', fontSize: '1.2rem'}}> {quotes[2].text} </p>
             <p style={{backgroundColor: 'transparent', marginTop: '15px'}}> 

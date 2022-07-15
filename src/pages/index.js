@@ -1,11 +1,11 @@
 import React  from "react";
-import Works from '../components/Works';
-import Navigation from '../components/Navigation';
-import Welcome from '../components/Welcome';
-import About from '../components/About';
-import Testimonials from '../components/Testimonials';
-import Contact from '../components/Contact';
-import Footer from '../components/Footer';
+import Works from '../components/Works.js';
+import Navigation from '../components/Navigation.js';
+import Welcome from '../components/Welcome.js';
+import About from '../components/About.js';
+import Testimonials from '../components/Testimonials.js';
+import Contact from '../components/Contact.js';
+import Footer from '../components/Footer.js';
 import '../styles/styles.css';
 
 const pageStyles = {

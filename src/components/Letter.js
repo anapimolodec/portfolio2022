@@ -53,7 +53,7 @@ const Letter = () => {
   return (
     <div style={letterStyle}>
 
-      <form ref={form} onSubmit={sendEmail} style={formStyle}>
+      <form ref={form} onSubmit={sendEmail} style={formStyle} className="nomargin">
       <Clip style={clipStyle}/>
         <p> Hello! </p> <br />
         <p><label>My name: </label> <input type="text" name="user_name" /></p>

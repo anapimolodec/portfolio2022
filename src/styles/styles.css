@@ -183,6 +183,22 @@ textarea:focus {
 .infoWrap {
   width: 60%;
 }
+.sliderStyle {
+  width: 80%;
+  text-align:center;
+}
+
+.footer > p {
+  margin-right: 50px;
+  padding-left: 100px;
+  margin-top: 30px;  
+}
+.footer-socials {
+  padding-right: 100px;
+}
+.postWrap {
+  width: 40%;
+}
 @media only screen and (max-width: 1200px) {
   .oneWork {
     display: flex;
@@ -208,11 +224,18 @@ textarea:focus {
     border-right: none;
     border-bottom: solid #e7b9aa 1px;
   }
+  .numberGrid {
+   justify-content: center !important;
+  }
 }
 @media only screen and (max-width: 768px) {
   h1 {
     width: 100%;
     float: left;
+  }
+  section > h2 {
+    font-size: 5rem !important;
+    word-wrap: break-word;
   }
   .mobileColumn {
     display: flex;
@@ -230,7 +253,41 @@ textarea:focus {
     width: 200px;
     left: 20%;
   }
- 
-  
+ .quote {
+  display: none;
+ }
+ .sliderStyle {
+  width: 100%;
+ }
+ .nomargin {
+  margin: 0px !important;
+ }
+ .nopadding {
+  padding: 0px !important;
+ }
+ .skillImg {
+  width: 40px !important;
+  height: 40px !important;
+ }
+ .postWrap {
+  width: 90%;
+  }
+ .footer > p {
+  padding: 0px;
 
+
+ }
+ .footer-socials {
+  padding: 0px;
+ }
+
+ #contactme {
+  text-align: center;
+ }
+}
+
+@media only screen and (max-width: 650px) {
+  .footer-socials {
+    display: none;
+  }
 }

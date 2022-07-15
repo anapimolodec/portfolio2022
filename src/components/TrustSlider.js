@@ -22,10 +22,7 @@ const word ={
   alignItems: 'center',
 
 }
-const sliderStyle = {
-  width: '80%',
-  textAlign: 'center',
-}
+
 const quotes = [
   {
     text: "I  truly appreciated working with Aiaru and wish her the very best wherever she decides to go. She was an important member of our team, helping us with our client's projects and I believe she will do more great things!",
@@ -65,9 +62,9 @@ export default function TrustSlider() {
     arrows: false
   };
   return (
-    <Slider {...settings} style={sliderStyle}>
+    <Slider {...settings} className ="sliderStyle">
       <div>
-        <div style={word}> 
+        <div style={word} className="nomargin"> 
           <div style= {textWrap}>
             <p style={{backgroundColor: 'transparent', fontStyle: 'italic', fontSize: '1.2rem'}}> {quotes[0].text} </p>
             <p style={{backgroundColor: 'transparent', marginTop: '15px'}}> 

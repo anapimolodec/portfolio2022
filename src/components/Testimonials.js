@@ -16,6 +16,7 @@ const sectionStyles = {
 const numberGrid = {
 	display: 'flex',
 	justifyContent: 'space-between',
+  flexWrap: 'wrap',
 	marginTop: '50px',
 }
 const numberBox = {
@@ -27,6 +28,8 @@ const numberBox = {
     flexDirection: 'column',
     justifyContent: 'center',
     alignItems: 'center',
+    marginBottom: '50px',
+    marginRight: '50px',
 }
 
 const number = {
@@ -52,7 +55,7 @@ const Testimonials = () => {
     <section style = {sectionStyles}> 
       <h2 style= {title} > Testimonials </h2>
       <p style= {{fontWeight: 500, color: '#7C9ABE', textAlign: 'center', fontSize: '1.2rem'}}> I worked as a Front End Developer in digital marketing company, where we used to work with different kinds of client companies. </p>
-     <div style = {numberGrid}>
+     <div style = {numberGrid} className="numberGrid">
      	<div style={numberBox}>
      		<p style={number}> 4 </p>
      		<p style= {company}> fashion and beauty companies </p>
@@ -71,9 +74,9 @@ const Testimonials = () => {
      	</div>
      </div>
      <div style={{display: 'flex', justifyContent: 'center', marginTop: '100px', marginBottom: '100px'}}>
-     	<Q2 />
+     	<Q2 className= "quote"/>
      	<TrustSlider />
-     	<Q1 style={{position:'relative', top: '220px'}}/> 
+     	<Q1 className= "quote" style={{position:'relative', top: '220px'}}/> 
      </div>
      
     </section>

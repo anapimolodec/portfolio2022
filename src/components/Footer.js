@@ -15,11 +15,9 @@ const footerMain = {
 
 const Footer = () => {
   return (
-  	<div style={footerMain}>
-  		
-  		<p style={{marginRight: '50px', paddingLeft:'100px', marginTop: '30px'}}> Personal Portfolio of Aiaru Mukhamedyarova. <br />All right reserved. 2022.</p>
-  		
-  		<div style={{paddingRight: '100px'}}> <Socials  /></div>
+  	<div style={footerMain} className="footer">
+  		<p> Personal Portfolio of Aiaru Mukhamedyarova. <br />All right reserved. 2022.</p>
+  		<div className= "footer-socials"> <Socials  /></div>
   	</div>
   	);
 }

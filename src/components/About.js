@@ -32,7 +32,6 @@ const skillWrap = {
 const postWrap = {
 	display: 'flex',
 	flexDirection: 'column',
-	width: '40%',
 	marginRight: '20px',
 	marginBottom: '20px',
 
@@ -144,7 +143,7 @@ const About = () => {
 	return (
 		<section style = {sectionStyles} id ="about"> 
 	      <h2 style= {title} > About </h2>
-	      <div style={{fontSize: '1.2rem', fontWeight: 300, paddingRight: '100px', paddingLeft: '50px'}}>
+	      <div style={{fontSize: '1.2rem', fontWeight: 300, paddingRight: '100px', paddingLeft: '50px'}} className="nopadding">
 	      {aboutText.map(sentence => (
 	      	<p key={sentence}> {sentence} <br /><br /></p>
           ))}
@@ -154,7 +153,7 @@ const About = () => {
 	      	<div style = {skillWrap}>
 	      	{frame.map(image => (
 	      		<div style={imgWrapStyle}>
-	      			<img style = {imgStyle} key = {image.name} src={URL+image.node.publicURL} alt="logo" width="80px" height="80px"/>
+	      			<img style = {imgStyle} key = {image.name} src={URL+image.node.publicURL} alt="logo" width="80px" height="80px" className = "skillImg"/>
 				</div>
               )
             )}
@@ -165,7 +164,7 @@ const About = () => {
 	      	<div style = {skillWrap}>
 	      	{tech.map(image => (
 	      		<div style={imgWrapStyle}>
-	      			<img style = {imgStyle} key = {image.name} src={URL+image.node.publicURL} alt="logo" width="80px" height="80px"/>
+	      			<img style = {imgStyle} key = {image.name} src={URL+image.node.publicURL} alt="logo" width="80px" height="80px"  className = "skillImg"/>
 				</div>
               )
             )}
@@ -176,7 +175,7 @@ const About = () => {
 	      	<div style = {skillWrap}>
 	      	{lang.map(image => (
 	      		<div style={imgWrapStyle}>
-	      			<img style = {imgStyle} key = {image.name} src={URL+image.node.publicURL} alt="logo" width="80px" height="80px"/>
+	      			<img style = {imgStyle} key = {image.name} src={URL+image.node.publicURL} alt="logo" width="80px" height="80px" className = "skillImg"/>
 				</div>
               )
             )}
@@ -187,7 +186,7 @@ const About = () => {
 	      	<div style = {skillWrap}>
 	      	{design.map(image => (
 	      		<div style={imgWrapStyle}>
-	      			<img style = {imgStyle} key = {image.name} src={URL+image.node.publicURL} alt="logo" width="80px" height="80px"/>
+	      			<img style = {imgStyle} key = {image.name} src={URL+image.node.publicURL} alt="logo" width="80px" height="80px" className = "skillImg"/>
 				</div>
               )
             )}
@@ -198,7 +197,7 @@ const About = () => {
 	      	<div style = {skillWrap}>
 	      	{cms.map(image => (
 	      		<div style={imgWrapStyle}>
-	      			<img style = {imgStyle} key = {image.name} src={URL+image.node.publicURL} alt="logo" width="80px" height="80px"/>
+	      			<img style = {imgStyle} key = {image.name} src={URL+image.node.publicURL} alt="logo" width="80px" height="80px" className = "skillImg"/>
 				</div>
               )
             )}
@@ -208,7 +207,7 @@ const About = () => {
 	      	<h3 style={subTitleStyle}> Posts </h3>
 	      	<div style = {skillWrap}>
 	      	{posts.map(post => (
-	      		<div style={postWrap}>
+	      		<div style={postWrap} className="postWrap">
 	      			<h4 style={{fontSize: '1.2rem', marginTop: '20px', marginBottom: '10px'}}><a href={post.url} style={{textDecoration: 'none', color: 'black'}}> {post.title} </a> </h4>
 	      			<p><span style={tagStyle}> {post.tag} </span><span style={{fontSize: '0.8rem'}}>  {post.date}</span> </p>
 	      			

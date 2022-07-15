@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React from "react";
 import '../styles/styles.css';
 import GHIcon from "../images/github.svg";
 import LIcon from "../images/linkedin.svg";

@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from "react";
+import React from "react";
 import '../styles/styles.css';
 import Socials from './Socials';
 import Circle from "../images/circle.svg";

@@ -3,16 +3,7 @@ import '../styles/typography.css';
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-const title = {
-  fontFamily: 'BonVivantSerif, serif',
-  fontSize: '96px',
-  marginBottom: '100px',
-}
-const sectionStyles = {
-  width: '80%',
-  marginLeft: '10%',
-  marginTop: '200px',
-}
+
 const word ={
 
   backgroundColor: '#F7FAFC',

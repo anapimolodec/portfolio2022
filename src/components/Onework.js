@@ -1,16 +1,9 @@
 import React, {useState} from 'react'
 import '../styles/typography.css'
 
-
-const workStyles = {
-  width: '80%',
-  marginLeft: '10%',
-}
-
 const oneWork = {
   width: '100%',
   display: 'flex',
-  
 }
 
 const indexStyle = {
@@ -19,13 +12,6 @@ const indexStyle = {
   minWidth: '150px',
   
 
-}
-const workGridStyle ={
-	marginLeft: '50px',
-	display: 'flex', 
-	flexDirection: 'row', 
-	justifyContent: 'flex-start', 
-	paddingBottom: '100px'
 }
 
 const lineStyle = {
@@ -78,7 +64,7 @@ const buttonStyle2 = {
 }
 const OneWork = ({link, index}) => {
 
-	const [visible, setVisible] = useState(index == 0 ? true : false);
+	const [visible, setVisible] = useState(index === 0 ? true : false);
 
 	const seeMore = (e) => {
 	    e.preventDefault();

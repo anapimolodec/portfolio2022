@@ -1,7 +1,7 @@
-import React, {useState} from "react";
+import React  from "react";
 import '../styles/styles.css';
 import {useStaticQuery, graphql} from 'gatsby'
-import { GatsbyImage } from 'gatsby-plugin-image'
+
 const title = {
   fontFamily: 'BonVivantSerif, serif',
   fontSize: '96px',
@@ -84,6 +84,12 @@ const subTitleStyle = {
 	marginTop: '30px', 
 	marginBottom: '10px'
 }
+
+const divWrap ={
+	display: 'flex',
+    flexDirection: 'column',
+    alignItems: 'center',
+}
 const About = () => {
 	const allImagesQuery = graphql`
     query MyQuery {
@@ -92,14 +98,9 @@ const About = () => {
 		      siteUrl
 		    }
 		  }
-      allFile(filter: {extension: {regex: "/(jpg)|(png)|(jpeg)|(svg)/"}}) {
+      allFile {
         edges {
           node {
-            base
-            size
-            childImageSharp {
-              gatsbyImageData
-            }
             name
             relativeDirectory
             extension
@@ -121,7 +122,7 @@ const About = () => {
     let frame = []
     images.map(image => {
           let dir = image.node.relativeDirectory;
-          
+          console.log(image.name,image, image.node.name)
           if (dir === "technologies") {
               tech.push(image)
                 
@@ -152,9 +153,12 @@ const About = () => {
 	      	<h3 style={subTitleStyle}> Frameworks </h3>
 	      	<div style = {skillWrap}>
 	      	{frame.map(image => (
-	      		<div style={imgWrapStyle}>
-	      			<img style = {imgStyle} key = {image.name} src={URL+image.node.publicURL} alt="logo" width="80px" height="80px" className = "skillImg"/>
-				</div>
+	      		<div style={divWrap}>
+		      		<div style={imgWrapStyle} className ="hoverDiv">
+		      			<img style = {imgStyle} key = {image.name} src={URL+image.node.publicURL} alt="logo" width="80px" height="80px" className = "skillImg"/>
+							</div>
+							<p className="hide"> {image.node.name} </p>
+						</div>
               )
             )}
             </div>
@@ -163,9 +167,13 @@ const About = () => {
 	      	<h3 style={subTitleStyle}> Technologies </h3>
 	      	<div style = {skillWrap}>
 	      	{tech.map(image => (
-	      		<div style={imgWrapStyle}>
+	      		<div style={divWrap}>
+	      		<div style={imgWrapStyle} className ="hoverDiv">
 	      			<img style = {imgStyle} key = {image.name} src={URL+image.node.publicURL} alt="logo" width="80px" height="80px"  className = "skillImg"/>
-				</div>
+	      			
+						</div>
+						<p className="hide"> {image.node.name} </p>
+						</div>
               )
             )}
             </div>
@@ -174,9 +182,12 @@ const About = () => {
 	      	<h3 style={subTitleStyle}> Languages and not </h3>
 	      	<div style = {skillWrap}>
 	      	{lang.map(image => (
-	      		<div style={imgWrapStyle}>
-	      			<img style = {imgStyle} key = {image.name} src={URL+image.node.publicURL} alt="logo" width="80px" height="80px" className = "skillImg"/>
-				</div>
+	      		<div style={divWrap}>
+		      		<div style={imgWrapStyle} className ="hoverDiv">
+		      			<img style = {imgStyle} key = {image.name} src={URL+image.node.publicURL} alt="logo" width="80px" height="80px" className = "skillImg"/>
+							</div>
+							<p className="hide"> {image.node.name} </p>
+						</div>
               )
             )}
             </div>
@@ -185,9 +196,12 @@ const About = () => {
 	      	<h3 style={subTitleStyle}> Design </h3>
 	      	<div style = {skillWrap}>
 	      	{design.map(image => (
-	      		<div style={imgWrapStyle}>
-	      			<img style = {imgStyle} key = {image.name} src={URL+image.node.publicURL} alt="logo" width="80px" height="80px" className = "skillImg"/>
-				</div>
+	      		<div style={divWrap}>
+		      		<div style={imgWrapStyle} className ="hoverDiv">
+		      			<img style = {imgStyle} key = {image.name} src={URL+image.node.publicURL} alt="logo" width="80px" height="80px" className = "skillImg"/>
+							</div>
+							<p className="hide"> {image.node.name} </p>
+						</div>
               )
             )}
             </div>
@@ -196,9 +210,12 @@ const About = () => {
 	      	<h3 style={subTitleStyle}> CMS </h3>
 	      	<div style = {skillWrap}>
 	      	{cms.map(image => (
-	      		<div style={imgWrapStyle}>
-	      			<img style = {imgStyle} key = {image.name} src={URL+image.node.publicURL} alt="logo" width="80px" height="80px" className = "skillImg"/>
-				</div>
+	      		<div style={divWrap}>
+		      		<div style={imgWrapStyle} className ="hoverDiv">
+		      			<img style = {imgStyle} key = {image.name} src={URL+image.node.publicURL} alt="logo" width="80px" height="80px" className = "skillImg"/>
+							</div>
+							<p className="hide"> {image.node.name} </p>
+						</div>
               )
             )}
             </div>

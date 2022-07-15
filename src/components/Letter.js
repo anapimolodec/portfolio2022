@@ -31,9 +31,6 @@ const formStyle= {
 
 }
 
-const handwritten = {
-  fontFamily: 'Caveat',
-}
 const Letter = () => {
   const form = useRef();
   const [sent, setSent] = useState(false);

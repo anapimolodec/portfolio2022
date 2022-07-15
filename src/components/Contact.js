@@ -2,9 +2,8 @@ import * as React from "react"
 import '../styles/typography.css';
 import Socials from './Socials';
 import Letter from './Letter';
-import {useStaticQuery, graphql} from 'gatsby'
 import '../styles/styles.css';
-// import Blog from './Blog';
+
 const title = {
   fontFamily: 'BonVivantSerif, serif',
   fontSize: '96px',

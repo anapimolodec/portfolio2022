@@ -5,7 +5,18 @@ module.exports = {
   plugins: [
     `gatsby-plugin-image`,
     `gatsby-plugin-sharp`,
-    `gatsby-transformer-sharp`, // Needed for dynamic images
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: `portfolio-aiaru`,
+        short_name: `portfolio`,
+        start_url: `/`,
+        background_color: `#E3EDEF`,
+        theme_color:`#E7B9AA`,
+        icon: `src/images/icon.png`,
+      }
+    },
+
     {
         resolve: `gatsby-plugin-google-fonts`,
         options: {

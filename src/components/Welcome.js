@@ -8,6 +8,7 @@ const welcomeStyles = {
 	height: '90vh',
 	justifyContent: 'center',
 	alignItems: 'center',
+	marginBottom: '100px',
 }
 
 const header = {

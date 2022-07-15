@@ -52,6 +52,7 @@ const buttonStyle = {
 	borderRadius: '50px',
 	fontSize: '1rem',
 	marginTop: '10px',
+  color: 'black',
 
 }
 const buttonStyle2 = {
@@ -60,6 +61,7 @@ const buttonStyle2 = {
 	marginTop: '10px',
 	borderBottom: '3px solid #7C9ABE',
 	fontStyle: 'italic',
+  color: 'black',
 
 }
 const OneWork = ({link, index}) => {
@@ -103,7 +105,7 @@ const OneWork = ({link, index}) => {
                           <div style={lineStyle}> <h3 style= {{width: '30%', fontWeight: 500, color: '#787878'}}> URL </h3> <div style= {{width: '70%'}}> <a href={link.url} style={{textDecoration: 'none', color: 'black' }}> {link.url}</a></div> </div>
                         ) : ("")
                       }
-                      <div style={lineStyle}> <h3 style= {{width: '30%', fontWeight: 500, color: '#787878'}}> Description </h3> 
+                      <div style={lineStyle}> <h3 style= {{width: '30%', fontWeight: 500, color: '#787878', wordWrap: 'break-word'}}> Description </h3> 
                         <div style= {{width: '70%'}}>  <p> {link.description} </p>
                         <div style={{marginTop: "20px", paddingBottom: "50px", display: 'flex', flexWrap: 'wrap'}}> {link.tags.map(tag => 
                           <span key ={tag} style={tagStyle}> {tag} </span>

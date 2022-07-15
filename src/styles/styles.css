@@ -230,6 +230,9 @@ textarea:focus {
     font-size: 5rem !important;
     word-wrap: break-word;
   }
+  .infoWrap h3 {
+  font-size: 1rem;
+  }
   .mobileColumn {
     display: flex;
     flex-direction: column;

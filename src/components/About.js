@@ -14,9 +14,9 @@ const imgStyle = {
 
 const imgWrapStyle = {
 	margin: '15px',
-	padding: '10px',
-    backgroundColor: '#C1DCED',
-    borderRadius: '50%',
+	padding: '8px',
+  backgroundColor: '#C1DCED',
+  borderRadius: '50%',
 }
 const sectionStyles = {
 	width: '80%',

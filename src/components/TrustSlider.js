@@ -21,9 +21,9 @@ const quotes = [
     position: 'CEO of Punch Digital Marketing',
   },
   {
-    text: 'Anapi voobshe molodec de',
-    author: 'Anapi',
-    position: 'in charge of body and soul',
+    text: 'I contacted Aiaru for a portfolio.  She did exactly what I wanted.  Everything was professional.  The site is very fast.  The design is very modern and minimalist, just like I wanted.  We immediately understood each other. Aiaru got my thought from the first minutes, and I fully entrusted the site to her. I plan to order from her in the future. Because visual and technical work is important for me.',
+    author: 'Akmaral',
+    position: 'freelance photographer',
   },
   {
     text: 'If you are reading this, please give me some testimonial aaaa',

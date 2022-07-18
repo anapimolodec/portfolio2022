@@ -122,7 +122,7 @@ const About = () => {
     let frame = []
     images.map(image => {
           let dir = image.node.relativeDirectory;
-          console.log(image.name,image, image.node.name)
+          
           if (dir === "technologies") {
               tech.push(image)
                 

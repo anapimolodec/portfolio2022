@@ -1,6 +1,7 @@
 import React, {useState} from "react";
 import '../styles/styles.css';
 import { useScrollPosition } from '@n8tb1t/use-scroll-position';
+import Burger from '../images/menu.svg';
 const navStyle = {
 	width: '100%',
 	display: 'flex',
@@ -23,6 +24,15 @@ const aStyle = {
 }
 
 const Navigation = () => {
+  const [open, setOpen] = useState();
+  const menuAction = () => {
+    if (open) {
+      setOpen(false)
+    } else {
+      setOpen(true)
+    }
+    console.log(open);
+  }
 	const [headerStyle, setHeaderStyle] = useState({
   	transition: 'all 300ms ease-in'
 	})
@@ -45,13 +55,15 @@ const Navigation = () => {
   )
   return (
   <nav style={navStyle}>
-    <ul className="menu" style={{...headerStyle}} >
+    <ul className={open ? "menu" : "menuclosed"} id = "menu" style={{...headerStyle}} >
     	<li className="logo" style={{"float":"left"}}><a href="/">anapimolodec</a></li>
     	<li className="item" style={itemStyle}><a href="/#contactme" style={aStyle}>contact</a><div className="underline"></div></li>
     	<li className="item" style={itemStyle}><a href="/works" style={aStyle} >works</a><div className="underline"></div></li>
     	<li className="item" style={itemStyle}><a href="/#about" style={aStyle} >about</a><div className="underline"></div></li>
 
+
     </ul>
+    <button onClick = {() => menuAction()} className="mobilemenu" > <Burger /> </button>
 </nav>
   	);
 }

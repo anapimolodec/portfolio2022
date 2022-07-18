@@ -191,7 +191,7 @@ textarea:focus {
   
 }
 
-
+.mobilemenu {display: none;}
 @media only screen and (max-width: 1200px) {
   .oneWork {
     display: flex;
@@ -295,6 +295,27 @@ textarea:focus {
   }
   .logo {
       display: none;
+  }
+  .mobilemenu {
+    display: flex;
+    z-index: 20;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 50px;
+    padding-top: 62px;
+    border: none;
+
+
+  }
+  .menuclosed {
+    display: none;
+
+  }
+  .menu {
+
+    visibility:  visible  !important;
+    transform: none !important;
   }
 }
 @media only screen and (max-width: 650px) {

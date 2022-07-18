@@ -8,15 +8,6 @@ const navStyle = {
 	zIndex: 100,
 }
 
-// const menuStyle = {
-// 	position: 'fixed',
-// 	top: 0,
-// 	width: '80%',
-// 	paddingTop: '60px',
-// 	borderBottom: 'solid #7C9ABE 1px',
-// 	listStyleType: 'none',
-
-// }
 
 const itemStyle = {
 	float: 'right',
@@ -55,10 +46,10 @@ const Navigation = () => {
   return (
   <nav style={navStyle}>
     <ul className="menu" style={{...headerStyle}} >
-    	<li className="logo" style={{"float":"left"}}><a href="#about">anapimolodec</a></li>
-    	<li className="item" style={itemStyle}><a href="#contactme" style={aStyle}>contact</a><div className="underline"></div></li>
-    	<li className="item" style={itemStyle}><a href="#works" style={aStyle} >works</a><div className="underline"></div></li>
-    	<li className="item" style={itemStyle}><a href="#about" style={aStyle} >about</a><div className="underline"></div></li>
+    	<li className="logo" style={{"float":"left"}}><a href="/">anapimolodec</a></li>
+    	<li className="item" style={itemStyle}><a href="/#contactme" style={aStyle}>contact</a><div className="underline"></div></li>
+    	<li className="item" style={itemStyle}><a href="/works" style={aStyle} >works</a><div className="underline"></div></li>
+    	<li className="item" style={itemStyle}><a href="/#about" style={aStyle} >about</a><div className="underline"></div></li>
 
     </ul>
 </nav>

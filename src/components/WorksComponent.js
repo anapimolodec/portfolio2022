@@ -6,7 +6,6 @@ const title = {
   fontFamily: 'BonVivantSerif, serif',
   fontSize: '96px',
   marginBottom: '100px',
-  paddingTop: '200px',
 }
 const sectionStyles = {
   width: '80%',
@@ -135,7 +134,7 @@ const links = [
 ]
 
 
-const Works = () => {
+const WorksComponent = () => {
   
   return (
     <section style = {sectionStyles} id ="works"> 
@@ -152,4 +151,4 @@ const Works = () => {
     );
 }
 
-export default Works;
+export default WorksComponent;

@@ -1,5 +1,4 @@
 import React  from "react";
-import Works from '../components/Works.js';
 import Navigation from '../components/Navigation.js';
 import Welcome from '../components/Welcome.js';
 import About from '../components/About.js';
@@ -21,7 +20,7 @@ const IndexPage = () => {
       <title> anapimolodec's portfolio</title>
       <Navigation />
       <Welcome />
-      <Works />
+      
       <About />
       <Testimonials />
       <Contact />

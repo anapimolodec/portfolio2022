@@ -84,7 +84,10 @@ const OneWork = ({link, index}) => {
 	}
 	return(
 		<div key={link.url} style={oneWork} className="oneWork">
-              <div style ={indexStyle} className="index"> <p style = {indexPstyle}> 0{index+1} </p></div>
+              {index <  9 
+              ? <div style ={indexStyle} className="index"> <p style = {indexPstyle}> 0{index+1} </p></div>
+              : <div style ={indexStyle} className="index"> <p style = {indexPstyle}> {index+1} </p></div>
+              }
               {visible ? 
               <div  className="oneWorkGrid"> 
                   <div  className="imgWrap">
@@ -105,6 +108,11 @@ const OneWork = ({link, index}) => {
                           <div style={lineStyle}> <h3 style= {{width: '30%', fontWeight: 500, color: '#787878'}}> URL </h3> <div style= {{width: '70%'}}> <a href={link.url} style={{textDecoration: 'none', color: 'black' }}> {link.url}</a></div> </div>
                         ) : ("")
                       }
+                      {
+                        link.code !== "" ? (
+                          <div style={lineStyle}> <h3 style= {{width: '30%', fontWeight: 500, color: '#787878'}}> Source Code </h3> <div style= {{width: '70%'}}> <a href={link.url} style={{textDecoration: 'none', color: 'black' }}> {link.code}</a></div> </div>
+                        ) : ("")
+                      }
                       <div style={lineStyle}> <h3 style= {{width: '30%', fontWeight: 500, color: '#787878', wordWrap: 'break-word'}}> Description </h3> 
                         <div style= {{width: '70%'}}>  <p> {link.description} </p>
                         <div style={{marginTop: "20px", paddingBottom: "50px", display: 'flex', flexWrap: 'wrap'}}> {link.tags.map(tag => 
@@ -112,6 +120,7 @@ const OneWork = ({link, index}) => {
                           )} </div>
                         </div> 
                       </div>
+                      
                       
                     </div>
                     <div style={desc2}>

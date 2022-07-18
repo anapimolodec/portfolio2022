@@ -20,6 +20,7 @@ const links = [
     url: "https://kravebeauty.co.kr/",
     description:
       "Beauty products company specilliasing in vegan and organic products",
+    code: '',
     tags: ["Client Work", "Front End"],
     image: 'https://user-images.githubusercontent.com/47024219/179133773-c023342b-0c85-4656-bb70-17cafe75df98.png',
     technologies: ["Shopify (platform)", "Liquid", "JS(ES6), HTML5, CSS3", "AWS instance", "WHOIS domain"],
@@ -32,6 +33,7 @@ const links = [
     url: "https://shop-t1.gg/",
     description:
       "Cyber Sport Company’s online shopping store for selling customizable merch products. ",
+    code: 'NDA',
     tags: ["Client Work", "Front End"],
     image: 'https://user-images.githubusercontent.com/47024219/179134011-f3c9f9c5-b80b-436c-b5e0-0a913bb4a66c.png',
     technologies: ["Shopify (platform)", "Liquid", "JS(ES6), HTML5, CSS3"],
@@ -45,6 +47,7 @@ const links = [
     url: "https://thisisneverthat.com/",
     description:
       "Contemporary fashion brand’s online store.",
+    code: '',
     tags: ["Client Work", "Back End"],
     image: 'https://user-images.githubusercontent.com/47024219/179134105-e3131887-a9f5-4e0a-aaeb-03e663e48b98.png',
     technologies: ["Shopify (platform)", "Liquid", "JS(ES6), HTML5, CSS3", "Kakao API", "Naver API"],
@@ -58,6 +61,7 @@ const links = [
     url: "https://ldp.co.kr/",
     description:
       "Luxury perfum online store.",
+    code: '',
     tags: ["Client Work", "Front End"],
     image: 'https://user-images.githubusercontent.com/47024219/179134243-70af7bfe-7fa3-4a08-adb5-61bb2c4bda62.png',
     technologies: ["Shopify (platform)", "Liquid", "JS(ES6), HTML5, CSS3"],
@@ -69,6 +73,7 @@ const links = [
     title: "Photographer’s Personal Portfolio",
     role: "Developer",
     url: "https://akma.gatsbyjs.io/",
+    code: 'https://github.com/anapimolodec/akma',
     description:
       "Personal Portfolio of an aspiring photographer",
     tags: ["Freelance", "Front End", "UI UX Design"],
@@ -81,11 +86,12 @@ const links = [
   {
     title: "Automation of news articles collection",
     role: "Python Developer",
-    url: '',
+    url: 'https://github.com/punchkorea/Jupyter-to-GoogleSheets',
     description:
-      "Personal Portfolio of an aspiring photographer",
+      "Automating the collection of Naver News articles with keywords in Google Sheets using Python",
+    code: 'https://github.com/punchkorea/Jupyter-to-GoogleSheets',
     tags: ["Freelance", "Front End", "UI UX Design"],
-    image: '"../images/PHOTO.png"',
+    image: 'https://user-images.githubusercontent.com/47024219/179463483-82aea0b9-9722-4192-8fc5-2861e1500e31.png',
     technologies: ['Python', 'Libraries (Pandas, BeautifulSoup)', 'Google Drive API', 'Goole Spreadsheets API'],
     contribution: "Worked on automation of collection of news articles from a website and storing them in easy-to-read way for the marketing team.",
     italictext: "Coded and installed on live server for daily run.",
@@ -97,6 +103,7 @@ const links = [
     url: '',
     description:
       "Landing page for life coach and her course. ",
+    code: '',
     tags: ["Freelance", "UI UX Design"],
     technologies: ['Figma'],
     image: 'https://user-images.githubusercontent.com/47024219/179134567-d96d97b0-ce43-4017-892e-588598ab4db4.png',
@@ -110,6 +117,7 @@ const links = [
     url: '',
     description:
       "Personal portfolio for a back-end developer.",
+    code: '',
     tags: ["Freelance", "UI UX Design"],
     technologies: ['Figma'],
     image: 'https://user-images.githubusercontent.com/47024219/179134724-a3b63913-de93-4f4c-9d84-32ba3ca61083.png',
@@ -123,11 +131,26 @@ const links = [
     url: 'https://try-find-face.herokuapp.com/',
     description:
       "Application which is built to implement AI Face Detection service into a simple application.",
+      code: 'https://github.com/anapimolodec/try-find-face',
     tags: ["Project", "Full Stack"],
     image: 'https://github.com/anapimolodec/portfolio/blob/main/src/components/images/face.png?raw=true',
-    technologies: ['React.js', 'Node.js', 'Express', 'Clarifai (API)', 'Tachyons(Toolkit)', 'JS(ES6), HTML5, CSS3'],
+    technologies: ['React.js', 'Node.js', 'Express', 'Clarifai (API)', 'Tachyons(Toolkit)', 'JS(ES6), HTML5, CSS3','Heroku'],
     contribution: "A user can register and upload an Image Url Address to detect face or multiple faces on the provided image. The app counts how many times the user detected faces and allows user to sign in any time later and continue using the app. The face detection algorithm is provided by Clarifai REST API.",
     italictext: "Full Front-End, Back-End development, database development, design, and connection to REST API.",
+    
+  },
+  {
+    title: "Personal Portfolio",
+    role: "Front End Developer",
+    url: 'https://anapimolodec.netlify.app/',
+    description:
+      "My personal portfolio built using Gatsby JS. 2022 Updated version.",
+    code: 'https://github.com/anapimolodec/portfolio2022',
+    tags: ["Project", "Front End"],
+    image: 'https://user-images.githubusercontent.com/47024219/179464372-1e099798-3b79-43a9-a94c-7a13977320ec.jpg',
+    technologies: ['Gatsby JS', 'EmailJS', 'graphql', 'JS(ES6), HTML5, CSS3', 'Figma', 'Netlify'],
+    contribution: "Static Website which is a brief summary of my web development journey",
+    italictext: "Full Front-End development, Figma design, and deployment.",
     
   },
 

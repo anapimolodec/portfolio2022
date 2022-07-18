@@ -12,6 +12,7 @@
 .mobileColumn {
   display: flex;
   flex-direction: row;
+  
 }
 
 
@@ -22,6 +23,8 @@
   position: fixed;
   top: 0;
   width: 80%;
+  padding-left: 10%;
+  padding-right: 10%;
   padding-top: 60px;
   border-bottom: solid #7C9ABE 1px;
   list-style-type: none;
@@ -190,7 +193,9 @@ textarea:focus {
   visibility: visible;
   
 }
-
+.customDots li button {
+  color: black;
+}
 .mobilemenu {display: none;}
 @media only screen and (max-width: 1200px) {
   .oneWork {
@@ -239,6 +244,7 @@ textarea:focus {
   .mobileColumn {
     display: flex;
     flex-direction: column;
+    height: auto !important;
   }
   .mobileFull {
     width: 80%;
@@ -302,7 +308,7 @@ textarea:focus {
     position: fixed;
     top: 0;
     right: 0;
-    width: 50px;
+    width: 30px;
     padding-top: 62px;
     border: none;
 

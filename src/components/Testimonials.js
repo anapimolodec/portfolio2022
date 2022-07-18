@@ -53,7 +53,7 @@ const Testimonials = () => {
   
   return (
     <section style = {sectionStyles}> 
-      <h2 style= {title} > Testimonials </h2>
+      <h2 style= {title} > Experience </h2>
       <p style= {{fontWeight: 500, color: '#7C9ABE', textAlign: 'center', fontSize: '1.2rem'}}> I worked as a Front End Developer in digital marketing company, where we used to work with different kinds of client companies. </p>
      <div style = {numberGrid} className="numberGrid">
      	<div style={numberBox}>

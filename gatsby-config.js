@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    siteUrl: `https://anapimolodec2.netlify.app/`,
+    siteUrl: `https://anapimolodec.netlify.app/`,
   },
   plugins: [
     `gatsby-plugin-image`,

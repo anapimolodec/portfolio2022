@@ -24,7 +24,7 @@ const aStyle = {
 }
 
 const Navigation = () => {
-  const [open, setOpen] = useState();
+  const [open, setOpen] = useState(true);
   const menuAction = () => {
     if (open) {
       setOpen(false)

@@ -33,7 +33,7 @@ const links = [
     url: "https://shop-t1.gg/",
     description:
       "Cyber Sport Company’s online shopping store for selling customizable merch products. ",
-    code: 'NDA',
+    code: '',
     tags: ["Client Work", "Front End"],
     image: 'https://user-images.githubusercontent.com/47024219/179134011-f3c9f9c5-b80b-436c-b5e0-0a913bb4a66c.png',
     technologies: ["Shopify (platform)", "Liquid", "JS(ES6), HTML5, CSS3"],

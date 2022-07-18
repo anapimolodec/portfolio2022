@@ -115,7 +115,7 @@ const OneWork = ({link, index}) => {
                       }
                       <div style={lineStyle}> <h3 style= {{width: '30%', fontWeight: 500, color: '#787878', wordWrap: 'break-word'}}> Description </h3> 
                         <div style= {{width: '70%'}}>  <p> {link.description} </p>
-                        <div style={{marginTop: "20px", paddingBottom: "50px", display: 'flex', flexWrap: 'wrap'}}> {link.tags.map(tag => 
+                        <div style={{marginTop: "20px", paddingBottom: "10px", display: 'flex', flexWrap: 'wrap'}}> {link.tags.map(tag => 
                           <span key ={tag} style={tagStyle}> {tag} </span>
                           )} </div>
                         </div> 
@@ -139,7 +139,7 @@ const OneWork = ({link, index}) => {
               </div>
               : <div className="oneWorkGridClosed"> 
               
-              <div style={{marginTop: "10px", marginBottom: '10px',     display: 'flex', flexWrap: 'wrap'}}> {link.tags.map(tag => 
+              <div style={{marginTop: "10px", display: 'flex', flexWrap: 'wrap'}}> {link.tags.map(tag => 
                           <span key ={tag} style={tagStyle}> {tag} </span>
                           )} </div>
               <h2 style={{fontFamily: 'BonVivantSerif, serif', fontSize: '2rem'}}> {link.title} </h2>

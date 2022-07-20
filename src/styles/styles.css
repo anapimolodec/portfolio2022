@@ -194,9 +194,7 @@ textarea:focus {
   visibility: visible;
   
 }
-.customDots li button {
-  color: black;
-}
+
 .mobilemenu {display: none;}
 @media only screen and (max-width: 1200px) {
   .oneWork {

@@ -93,12 +93,7 @@ const divWrap ={
 const About = () => {
 	const allImagesQuery = graphql`
     query MyQuery {
-		site {
-		    siteMetadata {
-		      siteUrl
-		    }
-		  }
-      allFile {
+	    allFile {
         edges {
           node {
             name
@@ -111,7 +106,7 @@ const About = () => {
     }`
     const {
     allFile: { edges: images },
-    site: {siteMetadata : {siteUrl: URL}},
+    
     } = useStaticQuery(allImagesQuery)
 
     let tech = []
@@ -155,7 +150,7 @@ const About = () => {
 	      	{frame.map(image => (
 	      		<div style={divWrap}>
 		      		<div style={imgWrapStyle} className ="hoverDiv">
-		      			<img style = {imgStyle} key = {image.name} src={URL+image.node.publicURL} alt="logo" width="80px" height="80px" className = "skillImg"/>
+		      			<img style = {imgStyle} key = {image.name} src={image.node.publicURL} alt="logo" width="80px" height="80px" className = "skillImg"/>
 							</div>
 							<p className="hide"> {image.node.name} </p>
 						</div>
@@ -169,7 +164,7 @@ const About = () => {
 	      	{tech.map(image => (
 	      		<div style={divWrap}>
 	      		<div style={imgWrapStyle} className ="hoverDiv">
-	      			<img style = {imgStyle} key = {image.name} src={URL+image.node.publicURL} alt="logo" width="80px" height="80px"  className = "skillImg"/>
+	      			<img style = {imgStyle} key = {image.name} src={image.node.publicURL} alt="logo" width="80px" height="80px"  className = "skillImg"/>
 	      			
 						</div>
 						<p className="hide"> {image.node.name} </p>
@@ -184,7 +179,7 @@ const About = () => {
 	      	{lang.map(image => (
 	      		<div style={divWrap}>
 		      		<div style={imgWrapStyle} className ="hoverDiv">
-		      			<img style = {imgStyle} key = {image.name} src={URL+image.node.publicURL} alt="logo" width="80px" height="80px" className = "skillImg"/>
+		      			<img style = {imgStyle} key = {image.name} src={image.node.publicURL} alt="logo" width="80px" height="80px" className = "skillImg"/>
 							</div>
 							<p className="hide"> {image.node.name} </p>
 						</div>
@@ -198,7 +193,21 @@ const About = () => {
 	      	{design.map(image => (
 	      		<div style={divWrap}>
 		      		<div style={imgWrapStyle} className ="hoverDiv">
-		      			<img style = {imgStyle} key = {image.name} src={URL+image.node.publicURL} alt="logo" width="80px" height="80px" className = "skillImg"/>
+		      			<img style = {imgStyle} key = {image.name} src={image.node.publicURL} alt="logo" width="80px" height="80px" className = "skillImg"/>
+							</div>
+							<p className="hide"> {image.node.name} </p>
+						</div>
+              )
+            )}
+            </div>
+	      </div>
+	      <div>
+	      	<h3 style={subTitleStyle}> Platforms </h3>
+	      	<div style = {skillWrap}>
+	      	{plat.map(image => (
+	      		<div style={divWrap}>
+		      		<div style={imgWrapStyle} className ="hoverDiv">
+		      			<img style = {imgStyle} key = {image.name} src={image.node.publicURL} alt="logo" width="80px" height="80px" className = "skillImg"/>
 							</div>
 							<p className="hide"> {image.node.name} </p>
 						</div>
@@ -212,7 +221,7 @@ const About = () => {
 	      	{cms.map(image => (
 	      		<div style={divWrap}>
 		      		<div style={imgWrapStyle} className ="hoverDiv">
-		      			<img style = {imgStyle} key = {image.name} src={URL+image.node.publicURL} alt="logo" width="80px" height="80px" className = "skillImg"/>
+		      			<img style = {imgStyle} key = {image.name} src={image.node.publicURL} alt="logo" width="80px" height="80px" className = "skillImg"/>
 							</div>
 							<p className="hide"> {image.node.name} </p>
 						</div>

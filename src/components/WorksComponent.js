@@ -19,7 +19,7 @@ const links = [
     role: "Front End Developer",
     url: "https://kravebeauty.co.kr/",
     description:
-      "Beauty products company specilliasing in vegan and organic products",
+      "Beauty products company specilliasing in healthy skincare with organic products",
     code: '',
     tags: ["Client Work", "Front End"],
     image: 'https://user-images.githubusercontent.com/47024219/179133773-c023342b-0c85-4656-bb70-17cafe75df98.png',
@@ -75,7 +75,7 @@ const links = [
     url: "https://akma.gatsbyjs.io/",
     code: 'https://github.com/anapimolodec/akma',
     description:
-      "Personal Portfolio of an aspiring photographer",
+      "Personal Portfolio of an aspiring photographer.",
     tags: ["Freelance", "Front End", "UI UX Design"],
     image: 'https://user-images.githubusercontent.com/47024219/179134379-e117aef2-d988-4d85-83f1-cde9d9f81550.png',
     technologies: ['GatsbyJS', 'Figma', 'JS(ES6), HTML5, CSS3'],
@@ -88,7 +88,7 @@ const links = [
     role: "Python Developer",
     url: 'https://github.com/punchkorea/Jupyter-to-GoogleSheets',
     description:
-      "Automating the collection of Naver News articles with keywords in Google Sheets using Python",
+      "Automating the collection of Naver News articles with keywords in Google Sheets using Python.",
     code: 'https://github.com/punchkorea/Jupyter-to-GoogleSheets',
     tags: ["Freelance", "Front End", "UI UX Design"],
     image: 'https://user-images.githubusercontent.com/47024219/179463483-82aea0b9-9722-4192-8fc5-2861e1500e31.png',
@@ -144,12 +144,12 @@ const links = [
     role: "Front End Developer",
     url: 'https://anapimolodec.netlify.app/',
     description:
-      "My personal portfolio built using Gatsby JS. 2022 Updated version.",
+      "My personal portfolio. 2022 Updated version.",
     code: 'https://github.com/anapimolodec/portfolio2022',
     tags: ["Project", "Front End"],
     image: 'https://user-images.githubusercontent.com/47024219/179464372-1e099798-3b79-43a9-a94c-7a13977320ec.jpg',
     technologies: ['Gatsby JS', 'EmailJS', 'graphql', 'JS(ES6), HTML5, CSS3', 'Figma', 'Netlify'],
-    contribution: "Static Website which is a brief summary of my web development journey",
+    contribution: "Static Website which is a brief summary of my web development journey.",
     italictext: "Full Front-End development, Figma design, and deployment.",
     
   },

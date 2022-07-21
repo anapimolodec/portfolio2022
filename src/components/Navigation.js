@@ -39,7 +39,7 @@ const Navigation = () => {
 
 	useScrollPosition(
   ({ prevPos, currPos }) => {
-    const isVisible = currPos.y > prevPos.y
+    const isVisible = currPos.y >= prevPos.y
 
     const shouldBeStyle = {
       visibility: isVisible ? 'visible' : 'hidden',

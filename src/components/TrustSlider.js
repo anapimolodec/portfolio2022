@@ -26,9 +26,9 @@ const quotes = [
     position: 'freelance photographer',
   },
   {
-    text: 'If you are reading this, please give me some testimonial aaaa',
-    author: 'You',
-    position: 'someone who cares',
+    text: 'Aiaru has an incredible eye for detail and an outstanding ability to translate complex design concepts into functional and aesthetically pleasing web pages. Her expertise in HTML and CSS has been invaluable in ensuring that our website is both visually stunning and user-friendly. Throughout the project, Aiaru maintained a clear line of communication with us, updating us on progress and soliciting feedback on their work. She was responsive, timely and consistently demonstrated a deep understanding of our needs and goals.',
+    author: 'Ricardo Pereira',
+    position: 'Upwork Client',
   },
 
 

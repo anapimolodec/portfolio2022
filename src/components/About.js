@@ -48,7 +48,7 @@ const aboutText = [
 	"I was born and raised in my beautiful Astana, Kazakhstan, where I also got my bachelor's degree in Civil Engineering. Then, changing location and major led me to the world of Web Development.",
 	"I am passionate about building neat and modern web applications. Majority of my work is related to Front End development. However, I also learned Full Stack Web Development and currently experimenting with UI UX design.",
 	"I am a good team player, a perfect fit for an aspiring tech company. Open to both freelance and full-time work positions.",
-	"Currently I am based in Seoul, South Korea. I am open to any collaborations and projects. "
+	"Currently I am based in Seoul, South Korea. I am a holder of F-2 resident visa, and I am open to any collaborations and projects. "
 	]
 
 const posts = [

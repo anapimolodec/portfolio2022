@@ -53,6 +53,12 @@ const aboutText = [
 
 const posts = [
 	{
+		title: 'How to make tags in Overleaf',
+		date: '28 Jun 2023',
+		url: 'https://dev.to/anapimolodec/how-to-make-tags-in-overleaf-33pd/',
+		tag: 'Overleaf',
+	},
+	{
 		title: 'Store Transfer from Cafe24 to Shopify: Part 2',
 		date: '15 Apr 2022',
 		url: 'https://punchkorea.com/cafe24-to-shopify-address-consent-pg/',

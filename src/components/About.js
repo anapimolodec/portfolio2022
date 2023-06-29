@@ -247,7 +247,11 @@ const About = () => {
 	      	{posts.map(post => (
 	      		<div style={postWrap} className="postWrap">
 	      			<h4 style={{fontSize: '1.2rem', marginTop: '20px', marginBottom: '10px'}}><a href={post.url} style={{textDecoration: 'none', color: 'black'}}> {post.title} </a> </h4>
-	      			<p><span style={tagStyle}> {post.tag} </span><span style={{fontSize: '0.8rem'}}>  {post.date}</span> </p>
+	      			<p>
+						{post.tag.map(t => (
+							<span style={tagStyle}> {t} </span>
+						))} 
+						<span style={{fontSize: '0.8rem'}}>  {post.date}</span> </p>
 	      			
 				</div>
               )

@@ -30,10 +30,9 @@ const Contact = () => {
         <p style={{fontStyle: 'italic'}}> I am open to any collaborations and work.  </p>
         <Socials />
         <p style={{marginTop: '30px'}}> click to 
-        <a href="https://drive.google.com/uc?export=download&id=1IZ76WgKhaPGUcVvdrBE3doudN_neUGhy" download style={{color:'black',textDecoration: 'none', borderBottom: '5px #7C9ABE solid'}}> download </a>my resume </p>
-
+        <a href="https://drive.google.com/uc?export=download&id=1mtXPMnXbIozedaohc9FDjr5kvYKrxNr8" download style={{color:'black',textDecoration: 'none', borderBottom: '5px #7C9ABE solid'}}> download </a>my resume </p>
       </div>
-      <Letter />
+      {/* <Letter /> */}
      
 
     </section>

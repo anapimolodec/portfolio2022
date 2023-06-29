@@ -58,7 +58,7 @@ const Navigation = () => {
     <ul className={open ? "menu" : "menuclosed"} id = "menu" style={{...headerStyle}} >
     	<li className="logo" style={{"float":"left"}}><a href="/">anapimolodec</a></li>
     	<li className="item" style={itemStyle}><a href="/#contactme" style={aStyle}>contact</a><div className="underline"></div></li>
-    	<li className="item" style={itemStyle}><a href="/works" style={aStyle} >works</a><div className="underline"></div></li>
+    	{/* <li className="item" style={itemStyle}><a href="/works" style={aStyle} >works</a><div className="underline"></div></li> */}
     	<li className="item" style={itemStyle}><a href="/#about" style={aStyle} >about</a><div className="underline"></div></li>
 
 

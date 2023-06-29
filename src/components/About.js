@@ -53,6 +53,12 @@ const aboutText = [
 
 const posts = [
 	{
+		title: 'Connecting Tailwind CSS, NextJS, and Storybook',
+		date: '20 Feb 2023',
+		url: 'https://dev.to/anapimolodec/connecting-tailwind-css-nextjs-and-storybook-2fe9/',
+		tag: ['Storybook', 'NextJS', 'TailwindCSS'], 
+	},
+	{
 		title: 'How to make tags in Overleaf',
 		date: '28 Jun 2023',
 		url: 'https://dev.to/anapimolodec/how-to-make-tags-in-overleaf-33pd/',

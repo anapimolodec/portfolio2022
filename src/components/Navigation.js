@@ -7,6 +7,7 @@ const navStyle = {
 	display: 'flex',
 	justifyContent: 'center',
 	zIndex: 100,
+  position: 'absolute',
 }
 
 
@@ -31,7 +32,7 @@ const Navigation = () => {
     } else {
       setOpen(true)
     }
-    console.log(open);
+    // console.log(open);
   }
 	const [headerStyle, setHeaderStyle] = useState({
   	transition: 'all 300ms ease-in'

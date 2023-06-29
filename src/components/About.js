@@ -68,19 +68,19 @@ const posts = [
 		title: 'Store Transfer from Cafe24 to Shopify: Part 2',
 		date: '15 Apr 2022',
 		url: 'https://punchkorea.com/cafe24-to-shopify-address-consent-pg/',
-		tag: ['Shopify'],
+		tag: ['Shopify', 'Data migration'],
 	},
 	{
 		title: 'Store Transfer from Cafe24 to Shopify: Part 1 (Data Transfer)',
 		date: '31 Mar 2022',
 		url: 'https://punchkorea.com/cafe24-to-shopify-data-transfer/',
-		tag: ['Shopify'],
+		tag: ['Shopify', 'Data migration'],
 	},
 	{
 		title: 'Automate the collection of Naver News articles with keywords in Google Sheets using Python',
 		date: '25 June 2021',
 		url: 'https://punchkorea.com/automate-naver-news-keywords-sheets/',
-		tag: ['Shopify'],
+		tag: ['Python', 'Google API', 'Web Scraping'],
 	},
 	{
 		title: 'Using PokeAPI to build simple Pokemon Generator',
